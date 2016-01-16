@@ -8,7 +8,7 @@
         var dependents = $("select#dependents").val();
 
         // $(".results").children("div").hide();
-        $(".result-row").hide();
+        $(".results").hide();
 
         if ((budget === "less") && (sunsnow === "sun") && (crowds === "peopleloving") {
           $(".tulum").show();
@@ -16,13 +16,13 @@
         } else if ((budget === "more") && (sunsnow === "sun")) && (crowds === "peopleloving"){
           $(".burningman").show();
         } else if ((budget === "less") && (nature === "superhero")) && (dependents === "children"){
-          $(".comecon").show();
+          $(".comicon").show();
         } else if ((budget === "more") && (sunsnow === "snow")) && crowds === "xenophobic"){
           $(".kremlin").show();
         } else if ((budget === "more") && (nature === "superhero")(dependents === "animals")) {
           $(".safari").show();
         } else if ((nature === "poet") && (sunsnow === "xenophobic")) && (dependants === animals) {
-            $(".animalshelter").show(); 
+            $(".animalshelter").show();
 
 
       event.preventDefault();
