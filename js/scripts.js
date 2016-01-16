@@ -1,21 +1,30 @@
-$(document).ready(function() {
-  $("#blanks form").submit(function(event) {
-    var person1Input = $("input#person1").val();
-    var person2Input = $("input#person2").val();
-    var animalInput= $("input#animal").val();
-    var exclamationInput = $("input#exclamation").val();
-    var verbInput = $("input#verb").val();
-    var nounInput = $("input#noun").val();
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
+    $(document).ready(function() {
+      $("form#vacation").submit(function(event) {
+        var budget = $("submit#budget").val();
+        var sunsnow = $("select#sunsnow").val();
+        var crowds = $("select#crowds").val();
+        var nature = $("select#nature").val();
+        var dependents = $("select#dependents").val();
 
-    $("#story").show();
+        // $(".results").children("div").hide();
+        $(".result-row").hide();
 
-    event.preventDefault();
-  });
-});
+        if ((budget === "less") && (sunsnow === "sun") && (crowds === "peopleloving") {
+          $(".tulum").show();
+        } else if ((budget === "less") && (sunsnow === "sun") && (crowds === "xenophobic") { $(".oasis").show();
+        } else if ((budget === "more") && (sunsnow === "sun")) && (crowds === "peopleloving"){
+          $(".burningman").show();
+        } else if ((budget === "less") && (nature === "superhero")) && (dependents === "children"){
+          $(".comecon").show();
+        } else if ((budget === "more") && (sunsnow === "snow")) && crowds === "xenophobic"){
+          $(".kremlin").show();
+        } else if ((budget === "more") && (nature === "superhero")(dependents === "animals")) {
+          $(".safari").show();
+        } else if ((nature === "poet") && (sunsnow === "xenophobic")) && (dependants === animals) {
+            $(".animalshelter").show(); 
+
+
+      event.preventDefault();
+      });
+    });
