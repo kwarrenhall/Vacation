@@ -10,7 +10,7 @@
         // $(".results").children("div").hide();
         $(".results").hide();
 
-        if ((budget === "less") && (sunsnow === "sun") && (crowds === "peopleloving")) {
+        if ((budget === "less") && (sunsnow === "sun") && (crowds === "peopleloving") && (nature === "poet") && (dependents === "children")) {
          $(".tulum").show();
         } else if ((budget === "less") && (sunsnow === "sun") && (crowds === "xenophobic")) {
          $(".oasis").show();
@@ -23,7 +23,7 @@
           $(".safari").show();
         } else if ((nature === "poet") && (sunsnow === "xenophobic") && (dependants === "animals")) {
          $(".animalshelter").show();
-            
+
 
 
       event.preventDefault();
