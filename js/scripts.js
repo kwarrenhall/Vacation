@@ -1,7 +1,7 @@
 
     $(document).ready(function() {
       $("form#vacation").submit(function(event) {
-        var budget = $("submit#budget").val();
+        var budget = $("select#budget").val();
         var sunsnow = $("select#sunsnow").val();
         var crowds = $("select#crowds").val();
         var nature = $("select#nature").val();
@@ -10,11 +10,13 @@
         // $(".results").children("div").hide();
         $(".results").hide();
 
-        if ((budget === "less") && (sunsnow === "sun") && (crowds === "peopleloving") && (nature === "poet") && (dependents === "children")) {
+        if ((budget === "less") && (sunsnow === "sun") && (crowds === "people") && (nature === "poet") && (dependents === "children")) {
+         $(".tulum").show();
+         $(".tulum").show();
          $(".tulum").show();
         } else if ((budget === "less") && (sunsnow === "sun") && (crowds === "xenophobic")) {
          $(".oasis").show();
-        } else if ((budget === "more") && (sunsnow === "sun") && (crowds === "peopleloving")) {         $(".burningman").show();
+        } else if ((budget === "more") && (sunsnow === "sun") && (crowds === "people")) {         $(".burningman").show();
         } else if ((budget === "less") && (nature === "superhero") && (dependents === "children")) {
          $(".comicon").show();
         } else if ((budget === "more") && (sunsnow === "snow") && crowds === "xenophobic")) {
