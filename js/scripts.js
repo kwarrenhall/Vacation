@@ -11,15 +11,18 @@
         // $(".results").children("div").hide();
         $(".results").hide();
 
+if (sunsnow === "sun"){
+  $(".safari").show();
+};
 
-
-        if ((budget === "lots") && (sunsnow === "sun") && (crowds === "xenophobic") && (nature === "poet") && (dependents === "animals")) {
-         $(".safari").show();
-         $(".safari").show();
-         $(".safari").show();
-        }
-        else {
-        $(".oasis").show();}
+        // if ((budget === "lots") && (sunsnow === "sun") && (crowds === "xenophobic") && (nature === "poet") && (dependents === "animals")) {
+        //  $(".safari").show();
+        // //  $(".safari").show();
+        // //  $(".safari").show();
+        // }
+      //   else {
+      //   $(".oasis").show();
+      // }
 
 
 
