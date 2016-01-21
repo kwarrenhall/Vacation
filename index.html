@@ -1,186 +1,162 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
-    <script src="js/jquery-1.12.0.min.js"></script>
-    <script src="js/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js" type="text/javascript"></script>
-  </head>
-
-  <body>
-   <div class="container">
-     <div class="navigation1">
-        <ul class="nav nav-pills">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="travelblog/index.html">Lucid Dreams</a></li>
-          <li role="presentation"><a href="https://weatherspark.com">globalweathersite</a></li>
-        </ul>
-     </div>
-    <div class="jumbotron">
-        <h1>Vacation</h1>
-        <p>
-          this website will help you identify the perfect vacation location for your tastes and budget
-        </p>
-
-    </div>
-       <div class="row-sm-12 ">
-          <form id="vacation">
-
-              <div class="form-group">
-              <label for="budget">how much do you want to spend?</label>
-              <select id="budget" class="form-control" type="select">
-                <option value="lots">$$$</option>
-                <option value="less">$</option>
-              </select>
-             </div>
-
-            <div class="form-group">
-              <label for="sunsnow">sun vs. snow</label>
-              <select id="sunsnow" class="form-control" type="select">
-                <option value="sun">sun</option>
-                <option value="snow">snow</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="crowds">what is your stanse on crowds?</label>
-              <select id="crowds" class="form-control" type="select">
-                <option value="xenophobic">xenophobic</option>
-                <option value="people">people loving</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="nature">what is your nature?</label>
-              <select id="nature" class="form-control" type="select">
-                <option value="poet">poet</option>
-                <option value="superhero">superhero</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="dependents">do you have any dependents?</label>
-              <select id="dependents" class="form-control" type="select">
-                <option value="animal">animals</option>
-                <option value="children">children</option>
-              </select>
-            </div>
-
-           <div class="form-group">
-            <button type="submit" class="btn">You would love...</button>
-            </div>
-          </form>
+<head>
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity=
+    "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    rel="stylesheet">
+    <link class="form responsive" form="" href="css/styles.css" media="screen"
+    rel="stylesheet" title="no title">
+    <script src="js/jquery-1.12.0.min.js">
+    </script>
+    <script src="js/js/bootstrap.min.js">
+    </script>
+    <script src="js/scripts.js" type="text/javascript">
+    </script>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation1">
+            <ul class="nav nav-pills">
+                <li class="active" role="presentation">
+                    <a href="#">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="travelblog/index.html">Lucid Dreams</a>
+                </li>
+                <li role="presentation">
+                    <a href="https://weatherspark.com">globalweathersite</a>
+                </li>
+            </ul>
         </div>
-  <!-- ******************************************** -->
-        <div class="results">
-          <div class="row-sm-12">
-
-  <!-- results options beginning -->
-          <div class="tulum">
-            <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="img/tulum.jpg" alt="...">
-                <div class="caption">
-                <h3>Tulum, Mexico</h3>
-                <p>
-                  Tulum is a city in Mexico
-                </p>
+        <div class="jumbotron">
+            <h1>Vacation</h1>
+            <p>this website will help you identify the perfect vacation
+            location for your tastes and budget</p>
+        </div>
+        <div class="row-sm-12">
+            <form id="vacation" name="vacation">
+                <div class="form-group">
+                    <label for="budget">how much do you want to spend?</label>
+                    <select class="form-control" id="budget">
+                        <option value="lots">
+                            $$$
+                        </option>
+                        <option value="less">
+                            $
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sunsnow">sun vs. snow</label> <select class=
+                    "form-control" id="sunsnow">
+                        <option value="sun">
+                            sun
+                        </option>
+                        <option value="snow">
+                            snow
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="crowds">what is your stanse on crowds?</label>
+                    <select class="form-control" id="crowds">
+                        <option value="xenophobic">
+                            xenophobic
+                        </option>
+                        <option value="people">
+                            people loving
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nature">what is your nature?</label>
+                    <select class="form-control" id="nature">
+                        <option value="poet">
+                            poet
+                        </option>
+                        <option value="superhero">
+                            superhero
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dependents">do you have any dependents?</label>
+                    <select class="form-control" id="dependents">
+                        <option value="animal">
+                            animal
+                        </option>
+                        <option value="children">
+                            children
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn" type="submit">You would
+                    love...</button>
+                </div>
+            </form>
+        </div>
+        <div class="row textBelow">
+            <div class="col-sm-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="animalshelter">
+                    <img alt="..." class="thumb" src=
+                    "img/animal%20shelter.jpg">
+                    <div class="caption">
+                        <h3>animalshelter</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="burningman">
+                    <img alt="..." class="thumb" src="img/burningman.jpg">
+                    <div class="caption">
+                        <h3>burningman</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="comicon">
+                    <img alt="..." class="thumb" src="img/comicon.jpg">
+                    <div class="caption">
+                        <h3>comicon</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="kremlin">
+                    <img alt="..." class="thumb" src="img/kremlin.jpg">
+                    <div class="caption">
+                        <h3>kremlin</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="oasis">
+                    <img alt="..." class="thumb" src="img/oasis.jpg">
+                    <div class="caption">
+                        <h3>oasis</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="safari">
+                    <img alt="..." class="thumb" src="img/safari.jpg">
+                    <div class="caption">
+                        <h3>safari</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="tulum">
+                    <img alt="..." class="thumb" src="img/tulum.jpg">
+                    <div class="caption">
+                        <h3>tulum</h3>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-           </div>
-          </div>
-
-          <div class = "animalshelter">
-           <div class="col-sm-4">
-           <div class="thumbnail">
-             <img src="img/animal shelter.jpg" alt="...">
-               <div class="caption">
-               <h3>animal shelter</h3>
-               <p>
-                 And maybe join PETA...
-               </p>
-               </div>
-           </div>
-           </div>
-          </div>
-
-          <div class = "burningman"
-           <div class="col-sm-4">
-           <div class="thumbnail">
-             <img src="img/burningman.jpg" alt="...">
-               <div class="caption">
-               <h3>Burning Man</h3>
-               <p>
-                 Burning Man Forever!
-               </p>
-               </div>
-           </div>
-           </div>
-          </div>
-
-          <div class="comicon">
-           <div class="col-sm-4">
-           <div class="thumbnail">
-             <img src="img/comicon.jpg" alt="...">
-               <div class="caption">
-               <h3>Comicon</h3>
-               <p>
-                 Portland's hottest festival for the superhero in you.
-               </p>
-               </div>
-           </div>
-           </div>
-          </div>
-
-         <div class="kremlin"
-           <div class="col-sm-4">
-           <div class="thumbnail">
-             <img src="img/kremlin.jpg" alt="...">
-               <div class="caption">
-               <h3>Kremlin</h3>
-               <p>
-                 For those with lots of money, and a dislike of the masses, this is the place for you.
-               </p>
-               </div>
-           </div>
-           </div>
-         </div>
-
-         <div class="oasis">
-           <div class="col-sm-4">
-           <div class="thumbnail">
-             <img src="img/oasis.jpg" alt="...">
-               <div class="caption">
-               <h3>Oasis</h3>
-               <p>
-                 The entry fee is less than your average resort and there is noone around for miles.
-               </p>
-               </div>
-           </div>
-           </div>
-         </div>
-
-        <div class="safari">
-           <div class="col-sm-4">
-           <div class="thumbnail">
-             <img src="img/safari.jpg" alt="...">
-               <div class="caption">
-               <h3>Safari</h3>
-               <p>
-                 For the well to do sun lover...
-               </p>
-               </div>
-           </div>
-           </div>
-        </div>  <!-- /Safari -->
-
-
-
-      </div>
-      </div>
-    </div>  <!-- /CONTAINER -->
-
-  </body>
-
+        </div>
+    </div>
+    <div class="row" id="bottom"></div>
+</body>
 </html>
